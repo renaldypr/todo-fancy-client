@@ -62,7 +62,7 @@
 
       $.ajax({
         method: 'post',
-        url: 'http://localhost:3000/users/login',
+        url: 'https://intense-meadow-87722.herokuapp.com/users/login',
         data: {
           email: email,
           password: password
@@ -98,7 +98,7 @@
         FB.getLoginStatus(function(response) {
           $.ajax({
             method: 'post',
-            url: 'http://localhost:3000/users/loginfb',
+            url: 'https://intense-meadow-87722.herokuapp.com/users/loginfb',
             headers: {
               token_fb: response.authResponse.accessToken
             }
